@@ -1,5 +1,6 @@
 # Site settings
 baseurl = "http://totalsoft.azurewebsites.net/"
+# baseurl = "https://jotaklim.github.io/"
 languageCode = "en-us"
 title = "TotalSoft"
 theme = "hugo-agency-theme"
@@ -71,25 +72,30 @@ googleAnalytics = "UA-93899141-1"
     [[menu.postpend]]
       url = "#page-top"
       name = "Home"
-      weight = 6
+      weight = 5
 
     [[menu.postpend]]
       url = "/about/"
       name = "About"
-      weight = 7
+      weight = 6
 
     [[menu.postpend]]
       url = "/solutions/"
       name = "solutions"
-      weight = 8
+      weight = 7
 
 [[menu.postpend]]
       url = "/testimonials/"
       name = "Testimonials"
+      weight = 8
+
+[[menu.postpend]]
+      url = "/resources/"
+      name = "Resources"
       weight = 9
 
     [[menu.postpend]]
-      url = "#contactform"
+      url = "#contact"
       name = "Contact"
       weight = 10
 
@@ -99,25 +105,30 @@ googleAnalytics = "UA-93899141-1"
       [[menu.postpend1]]
       url = "/"
       name = "Home"
-      weight = 6
+      weight = 5
 
     [[menu.postpend1]]
       url = "/about/"
       name = "About"
-      weight = 7
+      weight = 6
 
     [[menu.postpend1]]
       url = "/solutions/"
       name = "solutions"
-      weight = 8
+      weight = 7
 
     [[menu.postpend1]]
       url = "/testimonials/"
       name = "Testimonials"
+      weight = 8
+
+[[menu.postpend1]]
+      url = "/resources/"
+      name = "Resources"
       weight = 9
 
     [[menu.postpend1]]
-      url = "/index.html#contactform"
+      url = "/index.html#contact"
       name = "Contact"
       weight = 10
 
@@ -288,7 +299,7 @@ googleAnalytics = "UA-93899141-1"
   [params.about]
     enable = true
     title = "About Us"
-    subtitle = ""
+    subtitle = "Business software for financial services: this is our province. We are an IT provider and offer end-to-end solutions for leasing and microcredit. Our technology underlies the back and front office of 2 of the Top 5 leasing companies in Europe."
     endpoint = "Be part<br>of our<br>story!"
 
     # The events will be listed from the top to the bottom.
@@ -426,11 +437,13 @@ She worked at Pied Piper for years until they went belly up."""
   [params.contact]
     enable = true
     title = "Contact Us"
-    subtitle  = "You know what you want. So let us get to it: send a message to our account management team."
-    subtitlesolutions  = "Ready to try Charisma Leasing or Charisma Credit? Schedule a demo with one of our account managers."
-    subtitletestimonials = "Trust the choice of TOP leasing companies and credit providers. Talk to us and start using Charisma in your company."
-    buttonTextsolutions = "Schedule appointment"
+    titleSubscribe = "Subscribe"
+    subtitleMain  = "You know what you want. So let us get to it: send a message to our account management team."
+    subtitleSolutions  = "Enter your email to get notified about product and offer updates."
+    subtitleTestimonials = "Enter your email to receive ERP and CRM study cases."
+    subtitleResources = "Enter your email to get statistics from the ERP trade."
     buttonText = "Send message"
+    buttonTextSubscribe = "Subscribe"
 
 
 
@@ -639,8 +652,8 @@ She worked at Pied Piper for years until they went belly up."""
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Copyright &copy; TotalSoft Austria GmbH"
-    copyrightlink = "/terms-and-conditions/"
+    copyright = "TotalSoft Austria GmbH<br>Am Europlatz 2 / G<br>1120 Vienna<br>Austria"
+
 
     [[params.footer.social]]
       icon = "fa-linkedin"
@@ -658,7 +671,10 @@ She worked at Pied Piper for years until they went belly up."""
       text = "Solutions"
       link = "/solutions/"
 
-
     [[params.footer.quicklinks]]
       text = "TotalSoft in Romania"
       link = "https://www.charisma.ro/"
+
+    [[params.footer.quicklinks]]
+      text = "Terms of Use"
+      link = "/terms-and-conditions/"

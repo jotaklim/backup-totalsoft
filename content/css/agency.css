@@ -66,6 +66,11 @@ body {
     color: #888;
 }
 
+.text-small {
+    font-size: 12px;
+    line-height: 1;
+}
+
 .text-primary {
     color: #0075bf;
 }
@@ -927,14 +932,11 @@ section.contact .text-success {
 
 footer {
     padding: 25px 0;
-    text-align: center;
+    /*text-align: center;*/
 }
 
-footer span.copyright {
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+.footer-center {
+    text-align: center;
 }
 
 footer ul.quicklinks {

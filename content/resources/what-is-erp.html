@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<meta name="description" content="15 statistics that will help you understand what ERP is and how it makes business more competitive
+">
 
   {{ partial "head.html" . }}
 
   <body id="page-top" class="index">
-    {{ partial "nav1.html" . }}
-    <!-- {{ partial "hero.html" . }} -->
-
     {{ if .Site.Params.services.enable }}
-      {{ partial "testimonial-raiffeisen.html" . }}
+      {{ partial "resources-erp.html" . }}
     {{ end }}
+    {{ partial "contact-resources.html" . }}
 
     {{ partial "footer.html" . }}
 
