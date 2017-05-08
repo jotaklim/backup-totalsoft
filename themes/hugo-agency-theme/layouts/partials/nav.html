@@ -11,7 +11,8 @@
         <span class="icon-bar"></span>
       </button>
       {{ if .Site.Params.navigation.logo }}
-        <a class="navbar-brand page-scroll" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}">
+        <a class="navbar-brand page-scroll" href="/#page-top">
+        <!-- <a class="navbar-brand page-scroll" href="/#page-top"> -->
           {{ $url := printf "img/%s" .Site.Params.navigation.logo }}
           <img src="{{ $url | absURL }}" class="img-responsive" alt="{{ .Site.Params.navigation.brand }}">
         </a>
@@ -26,7 +27,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="hidden">
-          <a href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}"></a>
+          <a href="/#page-top"></a>
         </li>
 
         {{ range .Site.Menus.postpend }}
