@@ -19,8 +19,8 @@ googleAnalytics = "UA-93899141-1"
 
   # To provide some metadata for search engines feel free to add a few
   # information about you and your website.
-  name = "TotalSoft"
-  description = "ACME"
+  name = ""
+  description = ""
 
   # Link custom assets relative to /static
   custom_css = []

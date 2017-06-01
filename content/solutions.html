@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
-  {{ partial "head.html" . }}
+  <head>
+    <meta name="description" content="">
+    {{ partial "head.html" . }}
     {{ partial "js.html" . }}
+  </head>
 
   <body id="page-top" class="index">
 
@@ -16,6 +19,5 @@
     {{ partial "contact-solutions.html" . }}
     {{ partial "footer.html" . }}
     {{ partial "modals.html" . }}
-    {{ partial "hubspot.html" . }}
   </body>
 </html>
